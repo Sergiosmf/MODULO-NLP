@@ -1,0 +1,77 @@
+# Legal Chat Bot - Dependências Python
+# =====================================
+# Sistema RAG Jurídico Otimizado para Recursos Limitados
+# Versão: 1.0 | Data: Outubro 2025
+
+# ============================================
+# DEPENDÊNCIAS CORE (OBRIGATÓRIAS)
+# ============================================
+
+# Machine Learning & NLP Base
+scikit-learn>=1.0.0,<2.0.0    # TF-IDF vectorization, Logistic Regression
+numpy>=1.21.0,<2.0.0          # Operações matriciais e arrays
+
+# ============================================
+# DEPENDÊNCIAS PARA DESENVOLVIMENTO
+# ============================================
+
+# Jupyter Environment (para testes e desenvolvimento)
+jupyter>=1.0.0
+ipykernel>=6.0.0
+ipython>=7.0.0
+
+# Data Manipulation e Análise
+pandas>=1.4.0,<2.0.0          # Manipulação de dados (opcional)
+
+# Visualização (para debugging e análise)
+matplotlib>=3.5.0             # Gráficos (opcional)
+
+# ============================================
+# DEPENDÊNCIAS REJEITADAS
+# ============================================
+# As seguintes dependências foram REMOVIDAS devido a problemas técnicos:
+
+# torch>=1.9.0                 # REMOVIDO: Problemas de mutex/threading
+# transformers>=4.20.0         # REMOVIDO: Alto consumo de RAM (>8GB)
+# sentence-transformers>=2.2.0 # REMOVIDO: Conflitos de threading
+# faiss-cpu>=1.7.0            # REMOVIDO: Não necessário com TF-IDF
+# huggingface-hub>=0.10.0     # REMOVIDO: Dependência desnecessária
+
+# Modelos específicos que causaram problemas:
+# - rufimelo/Legal-BERTimbau-large    # MUTEX LOCKS
+# - meta-llama/Llama-3.2-1B-Instruct # RAM OVERFLOW  
+# - neuralmind/bert-base-portuguese-cased # THREADING ISSUES
+
+# ============================================
+# INSTALAÇÃO MÍNIMA FUNCIONAL
+# ============================================
+# Para instalação básica funcional, execute:
+# pip install scikit-learn numpy
+
+# Para ambiente completo de desenvolvimento:
+# pip install -r requirements.txt
+
+# ============================================
+# REQUISITOS DO SISTEMA
+# ============================================
+# Python: >=3.8,<4.0
+# RAM: Mínimo 2GB (recomendado 4GB)
+# CPU: Qualquer processador moderno
+# SO: Windows, macOS, Linux
+
+# ============================================
+# NOTAS TÉCNICAS
+# ============================================
+# 1. Este sistema foi projetado para SER LEVE e ESTÁVEL
+# 2. Evita propositalmente dependências pesadas que causam mutex locks
+# 3. Prioriza LATÊNCIA BAIXA sobre capacidades avançadas de NLP
+# 4. Compatible com ambientes de recursos limitados
+
+# ============================================
+# TROUBLESHOOTING
+# ============================================
+# Se houver problemas de instalação:
+# 1. Atualize pip: python -m pip install --upgrade pip
+# 2. Use ambiente virtual: python -m venv legal_chatbot_env
+# 3. Instale versões específicas se houver conflitos
+# 4. Para macOS: pode ser necessário instalar Xcode Command Line Tools
