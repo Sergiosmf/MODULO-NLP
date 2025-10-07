@@ -2,8 +2,8 @@
 
 **Autor:** Sérgio Mendes dos Santos Filho  
 **Contexto:** Estudo acadêmico sobre implementação de sistemas de Retrieval-Augmented Generation  
-**Período:** 2024-2025  
-**Instituição:** Pesquisa independente em NLP aplicado ao domínio jurídico brasileiro
+**Período:** 2025.2  
+**Instituição:** Pesquisa em NLP aplicado ao domínio jurídico brasileiro
 
 ---
 
