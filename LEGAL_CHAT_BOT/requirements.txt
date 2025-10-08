@@ -1,0 +1,36 @@
+# Chatbot Jurídico RAG - Dependências
+# Versões testadas em Python 3.11+
+
+# Core ML/NLP Libraries
+faiss-cpu==1.7.4                # Busca vetorial eficiente (versão CPU)
+sentence-transformers==2.2.2    # Embeddings BERT e modelos de linguagem
+numpy==1.24.3                   # Operações numéricas e arrays
+huggingface_hub==0.17.3         # Interface com Hugging Face Hub
+
+# PDF Processing
+pdfplumber==0.9.0               # Extração de texto de PDFs
+pypdf==3.0.1                    # Processamento adicional de PDFs
+
+# Data Processing
+pandas==2.0.3                   # Manipulação de dados (opcional)
+
+# Web and HTTP
+requests==2.31.0                # Requisições HTTP
+urllib3==2.0.4                  # Cliente HTTP de baixo nível
+
+# Utilities
+tqdm==4.65.0                    # Barras de progresso
+typing-extensions==4.7.1       # Extensões de tipagem
+
+# Jupyter Environment (se usando notebooks)
+jupyter==1.0.0                 # Ambiente Jupyter completo
+ipywidgets==8.0.7              # Widgets interativos para notebooks
+
+# Optional: Better text processing
+rank-bm25==0.2.2               # Algoritmo BM25 para ranking (não usado atualmente)
+unicodedata2==15.0.0           # Processamento Unicode avançado (opcional)
+
+# Development and Testing (opcional)
+pytest==7.4.0                  # Framework de testes
+black==23.7.0                  # Formatação de código
+flake8==6.0.0                  # Linting de código
