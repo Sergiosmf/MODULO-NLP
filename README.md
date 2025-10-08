@@ -7,7 +7,7 @@
 
 > **Autor:** [Sérgio Mendes dos Santos Filho](https://github.com/Sergiosmf)  
 > **Professor:** [Dimmy Magalhães](https://github.com/dimmykarson)  
-> **Instituição:** Pós-Graduação iCEV - Curso de NLP  
+> **Instituição:** ICEV - Instituto de Ensino Superior - Pós-Graduação em Inteligência Artificial - MODULO 06 - Processamento de Lingaugem Natural  
 > **Propósito:** Material educativo completo para aprendizado de NLP e Transformers
 
 ## 📚 Sobre este Repositório
